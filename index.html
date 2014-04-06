@@ -1,239 +1,260 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eggdrop Contest 2014</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Allan' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eggdrop Contest 2014</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar-default">
-    <div role="navigation" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#top" class="navbar-brand">Egg Drop Contest 2014</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul id="nav" class="nav navbar-nav">
-                    <li><a href="#wettbewerb">Wettbewerb</a></li>
-                    <li><a href="#regeln">Regeln</a></li>
-                    <li><a href="#mitmachen">Mitmachen!</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a data-toggle="modal" data-target="#datenschutz" href="">Datenschutz</a></li>
-                    <li><a data-toggle="modal" data-target="#impressum" href="">Impressum</a></li>
-                </ul>
-            </div>
-        </div>
+<body data-spy="scroll" data-target=".navbar-default" itemscope itemtype="http://data-vocabulary.org/Event">
+<div role="navigation" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#top" class="navbar-brand">Egg Drop Contest 2014</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul id="nav" class="nav navbar-nav">
+        <li><a href="#wettbewerb">Wettbewerb</a></li>
+        <li><a href="#regeln">Regeln</a></li>
+        <li><a href="#mitmachen">Mitmachen!</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a data-toggle="modal" data-target="#datenschutz" href="">Datenschutz</a></li>
+        <li><a data-toggle="modal" data-target="#impressum" href="">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="datenschutz" tabindex="-1" role="dialog" aria-labelledby="datenschutzModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="datenschutzModalLabel">Datenschutz</h4>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="impressum" tabindex="-1" role="dialog" aria-labelledby="impressumModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="impressumModalLabel">Impressum</h4>
+      </div>
+      <div class="modal-body">
+        <h3>Herausgeber</h3>
+        <address>
+          <strong>IEEE Student Branch Passau</strong><br>
+          Innstraße 33<br>
+          94032, Passau<br>
+          <a href="mailto:#">sb.passau@ieee.org</a>
+        </address>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- parallax 1 -->
+<section id="top" class="firefighter text-center">
+  <h1 class="title" itemprop="summary">Egg Drop Contest 2014</h1>
+  <div class="subtitle">
+    <h2>Wir lassen rohe Eier fliegen!</h2>
+    <h2>Kannst du sie vor dem harten Aufprall schützen?</h2>
+  </div>
+</section>
+<!-- /parallax 1-->
+
+<div id="wettbewerb" class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Der Wettbewerb</h1>
+      <img class="egg-shape one-third-right" itemprop="photo" src="images/dropped.jpg">
+      <p itemprop="description">
+        Bereits zum fünften Mal veranstaltet die <a href="http://ieee.uni-passau.de/">IEEE Student Branch Passau</a> den Egg Drop Contest. In Kooperation mit der <a href="http://www.ffpassau.de/index.php">Freiwilligen Feuerwehr Passau</a> werden erneut rohe EIer aus schwindeleregender Höhe fallen gelassen.
+      </p>
+      <dl class="dl-horizontal">
+        <dt>Wo</dt>
+        <dd itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+          <span itemprop="name">Audimax, Uni Passau<br> (zwischen Mensa, Audimax und FIM-Brücke)</span><br>
+                        <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+                            <span itemprop="street-address">Innstraße 31</span><br>
+                            <span itemprop="postal-code">94032</span>
+                            <span itemprop="locality">Passau</span><br>
+                            <span itemprop="country-name">Germany</span>
+                        </span>
+        </dd>
+        <dt>Wann</dt>
+        <dd>
+          <time itemprop="startDate" datetime="2014-06-07T014:00+01:00">7. Juni 2014 14:00</time>
+          &ndash;
+          <time itemprop="endDate" datetime="2014-06-07T018:00+01:00">18:00</time> Uhr
+        </dd>
+      </dl>
+      <p>
+        Nachdem die Fallhöhe von 10 und 15 Metern gemeistert wurden, werden wir dieses Jahr alle Konstruktionen aus 20 Meter Höhe abwerfen. Erfinderisches Geschick und Kreativität sind gefragt um die rohen Eier sicher landen zu lassen!
+      </p>
+    </div>
+  </div><!--/row-->
+</div><!--/container-->
+
+<!-- parallax 2 -->
+<section class="preparation"></section>
+<!-- /parallax 2 -->
+
+<div id="regeln" class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Die Regeln</h1>
+      <p>
+        Ziel des Wettbewerbs ist es, ein rohes Ei aus einer <strong>Höhe von 20m</strong> fallen zu lassen und es dabei mit Hilfe einer mechanischen Konstruktion (Käfig, Dämpfung, Fallschirm, Federung oder ähnliches) zu schützen. Da Ei sollte nach der Landung keine Risse oder sonstige Beschädigung ausweisen.
+      </p>
+      <div class="col-md-12 text-center eggs">
+        <img class="egg-shape" style="transform: rotate(-13deg);" src="images/creative_construction-1.jpg">
+        <img class="egg-shape" src="images/winner.jpg">
+        <img class="egg-shape" style="transform: rotate(21deg);" src="images/creative_construction-2.jpg">
+      </div>
+      <p>
+        Die Konstruktion, die das Ei schützt, heißt <strong>Egg-Dropper (ED)</strong>. Für einen ED bzw. den Einsatz gelten folgende Regeln:
+      <ul>
+        <li>maximales Gewicht von 1,5kg</li>
+        <li>maximale Abmessungen von 30cm &times; 30cm &times; 30cm</li>
+        <li>freiliegenden Eingang, so dass das Ei binnen kürzester Zeit eingesetzt bzw. wieder entfernt werden kann</li>
+        <li>Materialien mit hoher Viskosität (wie z.B. Gelatine oder Pudding) sind nicht erlaubt</li>
+        <li>der Weg von der Abwurfstelle bis zum Boden wird ohne Einfluss von Außen zurück gelegt</li>
+        <li>Gefährdung von Personen und Sachen muss ausgeschlossen sein</li>
+        <li>insb. ist die Verwendung von gefährlichen Stoffen (wie z.B. Säuren oder Sprengstoffen) ausgeschlossen</li>
+        <li>vorhandene elektrische Komponenten müssen mit einer Maximalspannung von 25 V auskommen</li>
+        <li>eventuelle Schlupflöcher in den Regeln dürfen nicht in der Art ausgenutzt werden, dass die Intention des Egg Drop Contests verdreht oder umgangen werden</li>
+        <li>Der ED darf höchstens zu 42% (Gewichtsanteil) aus Lebensmitteln bestehen (im Sinne dieser Regel ist das Ei kein Bestandteil des EDs!)</li>
+      </ul>
+      </p>
     </div>
 
-    <div class="modal fade" id="datenschutz" tabindex="-1" role="dialog" aria-labelledby="datenschutzModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="datenschutzModalLabel">Datenschutz</h4>
-                </div>
-                <div class="modal-body">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
+    <div class="col-md-12">
+      <p>
+
+      </p>
     </div>
 
-    <div class="modal fade" id="impressum" tabindex="-1" role="dialog" aria-labelledby="impressumModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="impressumModalLabel">Impressum</h4>
-                </div>
-                <div class="modal-body">
-                    <h3>Herausgeber</h3>
-                    <address>
-                        <strong>IEEE Student Branch Passau</strong><br>
-                        Innstraße 33<br>
-                        94032, Passau<br>
-                        <a href="mailto:#">sb.passau@ieee.org</a>
-                    </address>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
+  </div><!--/row-->
+</div><!--/container-->
+
+<!-- parallax 3 -->
+<section class="survived text-center"></section>
+<!-- /parallax 3-->
+
+<div id="mitmachen" class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>Mitmachen!</h1>
+      <p>
+        Du musst kein Daniel Düsentrieb sein um mit zu machen. Komm einfach vorbei und teste deine Erfindung. Wir freuen uns auf deine kreative Konstruktion! Du kannst allein oder als Team antreten.
+      </p>
+      <h2>Wichtiger Hinweis</h2>
+      <p>
+        Neben der Unversehrtheit der Ladung gehen auch das Gewicht, die Fallzeit und der Abstand zum Zielpunkt in die Wertung ein. Zusätzlich vergibt eine unabhängige und unbestechliche Jury B-Noten auf Genialität und Innovativität. Die Summe der Punkte ergibt dann die Rangliste der erfolgreichen EDs.
+      </p>
+      <h2>Inspiration</h2>
+      <p>
+        Wer noch nie an einem Egg Drop Contest teilgenommen hat, kann sich im Internet umschauen und inspirieren lassen. Eine <a href="http://www.youtube.com/results?search_query=egg+drop">YouTube-Suche nach "egg drop"</a> zeigt unzählige Konstruktionen und Experimente. Eigene Ideen sind natürlich ehrenhafter und haben bei den B-Noten natürlich auch bessere Chancen. :-)
+      </p>
     </div>
+    <div class="col-md-4">
+      <img class="egg-shape" src="images/animation.gif">
+    </div>
+  </div><!--/row-->
+</div><!--/container-->
 
-    <!-- parallax 1 -->
-    <section id="top" class="firefighter text-center">
-        <h1 class="title">Egg Drop Contest 2014</h1>
-        <div class="subtitle">
-            <h2>Wir lassen rohe Eier fliegen!</h2>
-            <h2>Kannst du sie vor dem harten Aufprall schützen?</h2>
-        </div>
-    </section>
-    <!-- /parallax 1-->
+<!-- parallax 4 -->
+<section class="participants text-center"></section>
+<!-- /parallax 4-->
 
-    <div id="wettbewerb" class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Der Wettbewerb</h1>
-                <img style="float:right;width:33%" class="egg-shape" src="images/dropped.jpg">
-                <p>
-                    Bereits zum vierten(?) mal veranstaltet die <a href="http://ieee.uni-passau.de/">IEEE Student Branch Passau</a> den Egg Drop Contest. In Kooperation mit der Freiwilligen Feuerwehr Passau.<br>
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-                    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                    Aliquam in felis sit amet augue.
-                </p>
-            </div>
-        </div><!--/row-->
-    </div><!--/container-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+  (function($) {
 
-    <!-- parallax 2 -->
-    <section class="preparation"></section>
-    <!-- /parallax 2 -->
+    $.fn.parallax = function(options) {
 
-    <div id="regeln" class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>Die Regeln</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-                    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                    Aliquam in felis sit amet augue.
-                </p>
-            </div>
-            <div class="col-md-8 col-md-offset-2 text-center eggs">
-                <img class="egg-shape" style="width: 25%;transform: rotate(-13deg);" src="images/creative_construction-1.jpg">
-                <img class="egg-shape" style="width: 25%" src="images/winner.jpg">
-                <img class="egg-shape" style="width: 25%;transform: rotate(25deg);" src="images/creative_construction-2.jpg">
-            </div>
-            <div class="col-md-8 col-md-offset-2">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-                    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                    Aliquam in felis sit amet augue.
-                </p>
-            </div>
+      var windowHeight = $(window).height();
 
-        </div><!--/row-->
-    </div><!--/container-->
+      // Establish default settings
+      var settings = $.extend({
+        speed        : 0.15
+      }, options);
 
-    <!-- parallax 3 -->
-    <section class="survived text-center"></section>
-    <!-- /parallax 3-->
+      // Iterate over each object in collection
+      return this.each( function() {
 
-    <div id="mitmachen" class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h1>Mitmachen!</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-                    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                    Aliquam in felis sit amet augue.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-                    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                    Aliquam in felis sit amet augue.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <img class="egg-shape" src="images/animation.gif">
-            </div>
-        </div><!--/row-->
-    </div><!--/container-->
+        // Save a reference to the element
+        var $this = $(this);
 
-    <!-- parallax 4 -->
-    <section class="participants text-center">
+        // Set up Scroll Handler
+        $(document).scroll(function(){
 
-    </section>
-    <!-- /parallax 4-->
+          var scrollTop = $(window).scrollTop();
+          var offset = $this.offset().top;
+          var height = $this.outerHeight();
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        (function($) {
+          // Check if above or below viewport
+          if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+            return;
+          }
 
-            $.fn.parallax = function(options) {
+          var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
 
-                var windowHeight = $(window).height();
+          // Apply the Y Background Position to Set the Parallax Effect
+          $this.css('background-position', 'center ' + yBgPosition + 'px');
 
-                // Establish default settings
-                var settings = $.extend({
-                    speed        : 0.15
-                }, options);
-
-                // Iterate over each object in collection
-                return this.each( function() {
-
-                    // Save a reference to the element
-                    var $this = $(this);
-
-                    // Set up Scroll Handler
-                    $(document).scroll(function(){
-
-                        var scrollTop = $(window).scrollTop();
-                        var offset = $this.offset().top;
-                        var height = $this.outerHeight();
-
-                        // Check if above or below viewport
-                        if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-                            return;
-                        }
-
-                        var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
-
-                        // Apply the Y Background Position to Set the Parallax Effect
-                        $this.css('background-position', 'center ' + yBgPosition + 'px');
-
-                    });
-                });
-            }
-        }(jQuery));
-
-        $('.firefighter, .survived').parallax({
-            speed :	0.15
         });
+      });
+    }
+  }(jQuery));
 
-        $('.preparation').parallax({
-            speed :	0.25
-        });
+  $('.firefighter, .survived').parallax({
+    speed :	0.15
+  });
 
-        $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
+  $('.preparation').parallax({
+    speed :	0.25
+  });
 
-        document.createElement("section"); // let IE support <sections>'s
-    </script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+  document.createElement("section"); // let IE support <sections>'s
+</script>
 </body>
 </html>

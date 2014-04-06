@@ -1,130 +1,150 @@
+@font-face {
+  font-family: 'Allan';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Allan'), local('Allan-Regular'), url(../fonts/Allan-Regular.ttf) format('woff');
+}
+
 body {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 section {
-    height: 600px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    overflow: auto;
-    box-shadow: rgb(0, 0, 0) 0px 0px 50px;
-    overflow: hidden;
+  height: 600px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 50px;
+  overflow: hidden;
 }
 
 .row {
-    margin: 100px 0;
+  margin: 100px 0;
 }
 
 .row img {
-    width: 100%;
+  width: 100%;
 }
 
 .firefighter {
-    background: url('../images/firefighter.jpg') no-repeat center center fixed;
-    color: #fff;
-    background-size: cover;
+  background: url('../images/firefighter.jpg') no-repeat center center fixed;
+  color: #fff;
+  background-size: cover;
 }
 
 .preparation {
-    background: url('../images/preparation.jpg') no-repeat top center fixed;
-    color: #fff;
-    height: 400px;
-    background-size: cover;
+  background: url('../images/preparation.jpg') no-repeat top center fixed;
+  color: #fff;
+  height: 400px;
+  background-size: cover;
 }
 
 .survived {
-    background: url('../images/survived.jpg') no-repeat bottom center fixed;
-    color: #fff;
-    height: 400px;
-    background-size: cover;
+  background: url('../images/survived.jpg') no-repeat bottom center fixed;
+  color: #fff;
+  height: 400px;
+  background-size: cover;
 }
 
 .participants {
-    background: url('../images/participants.jpg') no-repeat bottom center fixed;
-    color:#fff;
-    background-size: auto;
-    height: 500px;
+  background: url('../images/participants.jpg') no-repeat bottom center fixed;
+  color:#fff;
+  background-size: auto;
+  height: 600px;
 }
 
 .egg-shape {
-    border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+  border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
 }
 
-.eggs > *{
-    margin: 2em;
+.row .one-third-right {
+  float: right;
+  width: 33%;
+}
+
+.row .eggs > img {
+  margin: 3%;
+  width: 25%;
 }
 
 #footer {
-    height: 60px;
-    background-color:#585858;
-    margin-top:50px;
-    padding-top:20px;
-    padding-bottom:20px;
+  height: 60px;
+  background-color:#585858;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 #footer a {
-    color:#efefef;
+  color:#efefef;
 }
 
 .navbar-default {
-    background-color: #0053AA;
-    border: none;
+  background-color: #0053AA;
+  border: none;
 }
 
 
 .navbar-default .navbar-brand {
-    color: #fff;
-    font-family: Allan;
+  color: #fff;
+  font-family: Allan;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #fff;
-    text-shadow: 0 0 3px #fff;
+  color: #fff;
+  text-shadow: 0 0 3px #fff;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-    color: #fff;
-    background-color: #1E70C5;
+  color: #fff;
+  background-color: #1E70C5;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #1E70C5;
+  color: #fff;
+  background-color: #1E70C5;
 }
 
 h1, h2 {
-    font-family: Allan;
+  font-family: Allan;
 }
 
 h1 {
-    font-size: 4em;
-    margin-top: 0;
+  font-size: 4em;
+  margin-top: 0;
 }
 
 h1.title {
-    color: #ffff00;
-    text-shadow: 0 0 10px #000;
+  color: #ffff00;
+  text-shadow: 0 0 10px #000;
 }
 
 .subtitle {
-    color: #ffff00;
-    margin-top: 3em;
-    transform:rotate(-6deg);
-    -ms-transform:rotate(-6deg);
-    -webkit-transform:rotate(-6deg);
-    background-color: rgba(0,0,0,.6);
-    margin-left: -5%;
-    width: 110%;
+  color: #ffff00;
+  margin-top: 3em;
+  transform:rotate(-6deg);
+  -ms-transform:rotate(-6deg);
+  -webkit-transform:rotate(-6deg);
+  background-color: rgba(0,0,0,.6);
+  margin-left: -5%;
+  width: 110%;
 }
 
 h2 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
-p {
-    font-size: 1.4em;
+.row p, .row dl {
+  font-size: 1.4em;
+}
+
+.row ul {
+  font-size: 1.3em;
+}
+
+span[itemprop="address"] {
+  display: none;
 }
