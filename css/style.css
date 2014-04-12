@@ -10,6 +10,8 @@ body {
 }
 
 section {
+  color: #fff;
+  background-size: cover;
   height: 600px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -25,31 +27,72 @@ section {
   width: 100%;
 }
 
-.firefighter {
-  background: url('../images/firefighter.jpg') no-repeat center center fixed;
-  color: #fff;
-  background-size: cover;
-}
-
-.preparation {
-  background: url('../images/preparation.jpg') no-repeat top center fixed;
-  color: #fff;
+.survived, .preparation {
   height: 400px;
-  background-size: cover;
-}
-
-.survived {
-  background: url('../images/survived.jpg') no-repeat bottom center fixed;
-  color: #fff;
-  height: 400px;
-  background-size: cover;
 }
 
 .participants {
-  background: url('../images/participants.jpg') no-repeat bottom center fixed;
-  color:#fff;
-  background-size: auto;
   height: 600px;
+}
+
+@media (max-width: 767px) {
+  .firefighter {
+    background: url('../images/firefighter-xs.jpg') no-repeat center center fixed;
+  }
+  .preparation {
+    background: url('../images/preparation-xs.jpg') no-repeat top center fixed;
+  }
+  .survived {
+    background: url('../images/survived-xs.jpg') no-repeat bottom center fixed;
+  }
+  .participants {
+    background: url('../images/participants-xs.jpg') no-repeat bottom center fixed;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .firefighter {
+    background: url('../images/firefighter-sm.jpg') no-repeat center center fixed;
+  }
+  .preparation {
+    background: url('../images/preparation-sm.jpg') no-repeat top center fixed;
+  }
+  .survived {
+    background: url('../images/survived-sm.jpg') no-repeat bottom center fixed;
+  }
+  .participants {
+    background: url('../images/participants-sm.jpg') no-repeat bottom center fixed;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .firefighter {
+    background: url('../images/firefighter-md.jpg') no-repeat center center fixed;
+  }
+  .preparation {
+    background: url('../images/preparation-md.jpg') no-repeat top center fixed;
+  }
+  .survived {
+    background: url('../images/survived-md.jpg') no-repeat bottom center fixed;
+  }
+  .participants {
+    background: url('../images/participants-md.jpg') no-repeat bottom center fixed;
+  }
+}
+
+@media (min-width: 1200px) {
+  .firefighter {
+    background: url('../images/firefighter-lg.jpg') no-repeat center center fixed;
+  }
+  .preparation {
+    background: url('../images/preparation-lg.jpg') no-repeat top center fixed;
+  }
+  .survived {
+    background: url('../images/survived-lg.jpg') no-repeat bottom center fixed;
+  }
+  .participants {
+    background: url('../images/participants-lg.jpg') no-repeat bottom center fixed;
+  }
 }
 
 .egg-shape {
@@ -82,7 +125,6 @@ section {
   background-color: #0053AA;
   border: none;
 }
-
 
 .navbar-default .navbar-brand {
   color: #fff;
